@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: Runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 46.929 s <<< FAILURE! - in Runners.TestRunner
+:Buying process.user add iphone to the cart and fill the shipping data  Time elapsed: 39.059 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/app-root/div/app-shop-by-brand/div/div/div[2]/div/div[3]/div/div/div[2]/button (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/5p/p_08ld9d54s...}, goog:chromeOptions: {debuggerAddress: localhost:65005}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65005/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70126b8e8598e14e7ba079f7187fcd8b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at StepDefinition.Steps.theUserSelectedOneOfTheReturnedProducts(Steps.java:70)
+	at ✽.the user selected one of the returned products(file:///Users/ahmed/IdeaProjects/untitled/src/test/resources/Language.feature:8)
+
